@@ -6,6 +6,10 @@ body {
 	font-weight: normal;
 }
 
+#header {
+	margin-bottom: 2em;
+}
+
 h1 {
 	font-size: 3em;
 	color: #FFBDD2;

@@ -1,0 +1,23 @@
+body {
+	background-color: #080808;
+	font-family: Arial;
+	color: #DDDDDD;
+	margin: 5em;
+	font-weight: normal;
+}
+
+h1 {
+	font-size: 3em;
+	color: #FFBDD2;
+	font-weight: normal;
+	margin: 0;
+}
+
+h3 {
+	font-weight: normal;
+	margin: 0;
+}
+
+a {
+	color: #BDF3FF;
+}

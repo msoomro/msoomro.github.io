@@ -1,15 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title></title>
+	<title>Clock</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
-	
 </head>
 <body>
-	<div id="main">
-		<div id="clockbox"></div>
-		<script src="clock.js"></script>
+	<div id="page-content">
+		
+		<div id="main">
+			<div class="top">
+				<picture>
+					<source srcset="images/alarm-clock.png" media="(max-width: 600px)">
+					<source srcset="images/b-alarm-clock.png">
+					<img id="clock1" class="left" src="images/b-alarm-clock.png">
+				</picture>
+				<picture>
+					<source srcset="images/square-clock.png" media="(max-width: 600px)">
+					<source srcset="images/b-square-clock.png">
+					<img id="clock2" class="right" src="images/b-square-clock.png">
+				</picture>
+			</div>
 
+			<div id="clockbox" class="center"></div>
+			<script src="clock.js"></script>
+
+			<div class="bottom">
+				<picture>
+					<source srcset="images/wall-clock.png" media="(max-width: 600px)">
+					<source srcset="images/b-wall-clock.png">
+					<img id="clock3" class="left" src="images/b-wall-clock.png">
+				</picture>
+				<picture>
+					<source srcset="images/mantlepiece-clock.png" media="(max-width: 600px)">
+					<source srcset="images/b-mantlepiece-clock.png">
+					<img id="clock4" class="right" src="images/b-mantlepiece-clock.png">
+				</picture>
+			</div>
+		</div>
+
+		<footer>Icons sourced from <a href="icons8.com/icons/set/clock">icons8</a></footer>
 	</div>
 </body>
 </html>

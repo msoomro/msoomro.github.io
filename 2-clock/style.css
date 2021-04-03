@@ -1,0 +1,13 @@
+body {
+	background-color: #2F3340;
+}
+
+#main {
+	margin-top: 5em;
+}
+
+div#clockbox{
+	font: 72pt Arial;
+	color: #BDCDFF;
+	text-align: center;
+}

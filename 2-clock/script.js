@@ -1,11 +1,11 @@
 function sizeUp() {
 	
-	document.getElementById("clockbox").style.fontSize = "7vw";
+	document.getElementById("clockbox").style.fontSize = "10vw";
 }
 
 function sizeDown() {
 
-	document.getElementById("clockbox").style.fontSize = "1vw";
+	document.getElementById("clockbox").style.fontSize = "3vw";
 }
 
 function changeColor() {

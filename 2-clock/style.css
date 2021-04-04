@@ -1,4 +1,6 @@
 body {
+	margin: 0;
+	padding: 0;
 	background-color: #2F3340;
 	font-family: Arial;
 }
@@ -11,7 +13,7 @@ body {
 }
 
 #clockbox{
-	font-size: 2vw;
+	font-size: 5vw;
 	font-family: Arial;
 	color: #BDCDFF;
 }

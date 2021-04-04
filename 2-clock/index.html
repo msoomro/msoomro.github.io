@@ -4,42 +4,59 @@
 	<title>Clock</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" href="style.css">
+	
 </head>
 <body>
 	<div id="page-content">
 		
 		<div id="main">
 			<div class="top">
-				<picture>
-					<source srcset="images/alarm-clock.png" media="(max-width: 600px)">
-					<source srcset="images/b-alarm-clock.png">
-					<img id="clock1" class="left" src="images/b-alarm-clock.png">
-				</picture>
-				<picture>
-					<source srcset="images/square-clock.png" media="(max-width: 600px)">
-					<source srcset="images/b-square-clock.png">
-					<img id="clock2" class="right" src="images/b-square-clock.png">
-				</picture>
+				<span id="clock1" class="left">
+					<picture>
+						<source srcset="images/alarm-clock.png" media="(max-width: 600px)">
+						<source srcset="images/b-alarm-clock.png">
+						<img onclick="sizeUp()" src="images/b-alarm-clock.png">
+					</picture>
+					<p>+ size</p>
+				</span>
+
+				<span id="clock2" class="right">
+					<picture>
+						<source srcset="images/square-clock.png" media="(max-width: 600px)">
+						<source srcset="images/b-square-clock.png">
+						<img  onclick="changeColor()" src="images/b-square-clock.png">
+					</picture>
+					<p>change color</p>
+				</span>
 			</div>
 
 			<div id="clockbox" class="center"></div>
 			<script src="clock.js"></script>
 
 			<div class="bottom">
-				<picture>
-					<source srcset="images/wall-clock.png" media="(max-width: 600px)">
-					<source srcset="images/b-wall-clock.png">
-					<img id="clock3" class="left" src="images/b-wall-clock.png">
-				</picture>
-				<picture>
-					<source srcset="images/mantlepiece-clock.png" media="(max-width: 600px)">
-					<source srcset="images/b-mantlepiece-clock.png">
-					<img id="clock4" class="right" src="images/b-mantlepiece-clock.png">
-				</picture>
+				<span  id="clock3" class="left">
+					<picture>
+						<source srcset="images/wall-clock.png" media="(max-width: 600px)">
+						<source srcset="images/b-wall-clock.png">
+						<img onclick="sizeDown()" src="images/b-wall-clock.png">
+					</picture>
+					<p>- size</p>
+				</span>
+
+				<span  id="clock4" class="right">
+					<picture>
+						<source srcset="images/mantlepiece-clock.png" media="(max-width: 600px)">
+						<source srcset="images/b-mantlepiece-clock.png">
+						<img onclick="addShadow()" src="images/b-mantlepiece-clock.png">
+					</picture>
+					<p>+ shadow</p>
+				</span>
 			</div>
 		</div>
 
 		<footer>Icons sourced from <a href="icons8.com/icons/set/clock">icons8</a></footer>
 	</div>
+
+	<script type="text/javascript" src="script.js"></script>
 </body>
 </html>

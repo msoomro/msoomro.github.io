@@ -1,5 +1,6 @@
 body {
 	background-color: #2F3340;
+	font-family: Arial;
 }
 
 #page-content {
@@ -9,41 +10,46 @@ body {
 	color: #D6E0FF;
 }
 
-div#clockbox{
+#clockbox{
 	font-size: 2vw;
 	font-family: Arial;
 	color: #BDCDFF;
 }
 
-picture {
-	padding: 2px;
-}
-
 .center {
-	position: absolute;
-	top: 40%;
-	left: 48%
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	padding-top: 15%;
 }
 
 .top {
-	position: relative;
+	position: absolute;
 	top: 10vh;
 }
 
 .bottom {
-	position: relative;
+	position: absolute;
 	top: 50vh;
 }
 
 .left {
-	position: relative;
-	right: 35vw;
+	position: absolute;
+	left: 8vw;
 }
 
 .right {
-	position: relative;
-	left: 35vw;
+	position: absolute;
+	left: 85vw;
 }
+
+span {
+	padding: 2px;
+}
+
+	span p {
+		/*visibility: hidden;*/
+	}
 
 footer {
 	font: 1vw Arial;

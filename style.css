@@ -1,8 +1,9 @@
 body {
 	background-color: #080808;
 	font-family: Arial;
+	font-size: 20px;
 	color: #DDDDDD;
-	margin: 5em;
+	margin: 8vh 4vw 2vh 10vw;
 	font-weight: normal;
 }
 
@@ -11,15 +12,20 @@ body {
 }
 
 h1 {
-	font-size: 3em;
+	font-size: 50px;
 	color: #FFBDD2;
 	font-weight: normal;
 	margin: 0;
 }
 
 h3 {
+	font-size: 30px;
 	font-weight: normal;
 	margin: 0;
+}
+
+strong {
+	font-weight: 700;
 }
 
 a {

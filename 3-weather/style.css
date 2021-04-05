@@ -66,6 +66,11 @@ main {
 	font-size: 16px;
 }
 
+.current .icon {
+	width: 150px;
+	height: auto;
+}
+
 .current .temp {
 	color: #FFF;
 	font-size: 102px;
@@ -75,7 +80,7 @@ main {
 }
 
 .current .temp span {
-	font-weight: 750;
+	font-weight: 1;
 }
 
 .current .weather {
@@ -91,5 +96,5 @@ main {
 	color: #FFF;
 	font-size: 24px;
 	font-weight: 500;
-	text-shadow: 0 3px rgba(0,0,0,0.4);
+	text-shadow: 0 3px rgba(0,0,0,0.2);
 }

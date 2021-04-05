@@ -10,7 +10,7 @@ function setQuery(evt) {
 	// enter button is 13
 	if(evt.keyCode == 13) {
 		getResults(searchbox.value);
-		console.log(searchbox.value);
+		searchbox.value = "";
 	}
 }
 
@@ -32,8 +32,11 @@ function displayResults (weather) {
 	let temp = document.querySelector('.current .temp');
 	temp.innerHTML = `${Math.round(weather.main.temp)}<span>°F</span>`;
 
+	let icon = document.querySelector('.current .icon');
+	icon.src = `images/${weather.weather[0].icon}.png`;
+
 	let weather_el = document.querySelector('.current .weather');
-	weather_el.innerText = weather.weather[0].main;
+	weather_el.innerText = weather.weather[0].description;
 
 	let hiLow = document.querySelector('.current .hi-low');
 	hiLow.innerText = `${Math.round(weather.main.temp_min)}°F / ${Math.round(weather.main.temp_max)}°F`;

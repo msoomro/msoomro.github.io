@@ -18,11 +18,12 @@ game.addEventListener('click', function() {
 submit.addEventListener('click', function() {
 	let inHex = document.getElementById("hex").value;
 	let bcolor = document.body.style.backgroundColor;
-
-	if (inHex == bcolor) 
+	bcolor = rgbToHex(bcolor);
+	
+	if (inHex === bcolor) 
 		alert("Correct!");
 	else if (inHex.length == 6)
-		alert("That's not right, the correct answer is #"+`${rgbToHex(bcolor)}`)
+		alert("That's not right, the correct answer is #"+`${bcolor}`)
 });
 
 function getRandom(max) {
@@ -40,11 +41,6 @@ function changeColor() {
 	return ncolor;
 }
 
-function flipVisibility(element) {
-	isHidden = element.style.display == "none";
-	isHidden ? element.style.display = "revert" : element.style.display = "none";
-}
-
 function rgbToHex(rgb) {
 	// rgb is in the form: rgb(###, ###, ###)
 	rgb = rgb.slice(4, rgb.indexOf(")"));
@@ -54,7 +50,7 @@ function rgbToHex(rgb) {
 			+ componentToHex(parseInt(rgb[1])) 
 			+ componentToHex(parseInt(rgb[2]));
 	
-	return r;
+	return r.toUpperCase();
 }
 
 function componentToHex(c) {

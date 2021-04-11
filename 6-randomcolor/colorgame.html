@@ -9,7 +9,7 @@
 </head>
 <body>
 	<header>
-		<a href="index.html" id="flipbtn" class="btn">RANDOM NUMBER GENERATOR</a>
+		<a href="index.html" id="flipbtn" class="btn">RANDOM COLOP GENERATOR</a>
 	</header>
 	<div class="content">
 		<form id="guess">
@@ -18,7 +18,20 @@
 			<span>
 				HEX #<input id="hex" type="text" name="hex" placeholder="000000" maxlength="6" minlength="6">
 			</span>
-			
+			<div id="guesses">
+				<span id="guess1">
+					Guess 1
+					<span id="color1"></span>
+				</span>
+				<span id="guess2">
+					Guess 2
+					<span id="color2"></span>
+				</span>
+				<span id="guess3">
+					Guess 3
+					<span id="color3"></span>
+				</span>
+			</div>
 			</br>
 			<button id="submit" class="btn">SUBMIT</button>
 			<button id="changecolor" class="btn">CHANGE COLOR</button>

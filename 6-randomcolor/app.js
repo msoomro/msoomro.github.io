@@ -14,10 +14,6 @@ btn.addEventListener('click', function() {
 	color.textContent = "#"+`${ncolor}`;
 });
 
-game.addEventListener('click', function() {
-	changeColor();
-});
-
 submit.addEventListener('click', function() {
 	let inHex = document.getElementById("hex").value;
 	let bcolor = document.body.style.backgroundColor;

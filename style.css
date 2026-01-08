@@ -1,0 +1,25 @@
+body {
+    background-color: azure;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+section {
+    height: 100vh;
+}
+
+section#portfolio {
+    background-color: rgba(0,0,0,0.5);
+}
+
+#gallery {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img {
+    background-color: rgb(255,255,255);
+    height: 400px;
+    width: 300px;
+    margin: 0 10px;
+}

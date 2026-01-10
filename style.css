@@ -1,6 +1,43 @@
+:root {
+    --primary-color: rgb(255, 164, 249);
+    --secondary-color: rgb(187, 164, 255);
+    --tertiary-color: rgb(51, 23, 154);
+    --accent-color: rgb(147, 212, 253);
+}
+
 body {
-    background-color: azure;
+    background-color: var(--primary-color);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: var(--tertiary-color);
+}
+
+h1 {
+    font-style: bold;
+    color: var(--tertiary-color);
+}
+
+h3 {
+    font-style: normal;
+    color: var(--secondary-color);
+}
+
+h4 {
+    font-style: italic;
+    color: var(--tertiary-color);
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+    background-color: var(--accent-color);
+}
+
+#leftnav {
+    float: left;
+}
+
+#rightnav {
+    float: right;
 }
 
 section {
@@ -17,7 +54,7 @@ section#portfolio {
     align-items: center;
 }
 
-img {
+#gallery img {
     background-color: rgb(255,255,255);
     height: 400px;
     width: 300px;

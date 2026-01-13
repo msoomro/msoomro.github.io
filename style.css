@@ -1,22 +1,25 @@
 :root {
-    --primary-color: rgb(255, 164, 249);
-    --secondary-color: rgb(187, 164, 255);
+    --primary-color:rgb(255, 202, 251);
+    --secondary-color: rgb(255, 164, 249);/*rgb(187, 164, 255);*/
     --tertiary-color: rgb(51, 23, 154);
     --accent-color: rgb(147, 212, 253);
 }
 
 body {
-    background-color: var(--primary-color);
+    /* background-color: var(--primary-color); */
+    background-image: linear-gradient(rgb(255, 202, 251), rgb(51, 23, 154));
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--tertiary-color);
 }
 
 h1 {
+    font-size: 72px;;
     font-style: bold;
     color: var(--tertiary-color);
 }
 
 h3 {
+    font-size: 48px;
     font-style: normal;
     color: var(--secondary-color);
 }
@@ -41,7 +44,12 @@ h4 {
 }
 
 section {
+    padding: 15px;
+}
+
+section#hero {
     height: 100vh;
+    padding: 0;
 }
 
 section#portfolio {

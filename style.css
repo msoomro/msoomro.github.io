@@ -6,10 +6,19 @@
 }
 
 body {
-    /* background-color: var(--primary-color); */
-    background-image: linear-gradient(rgb(255, 202, 251), rgb(51, 23, 154));
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-image: linear-gradient(var(--primary-color), var(--tertiary-color));
+    font-family: Bahnschrift, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     color: var(--tertiary-color);
+    margin: 0;
+    padding: 0;
+
+    /*Hides any horizontal overflow */
+    width: 99vw;
+    overflow-x: hidden;  
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
 }
 
 h1 {
@@ -25,8 +34,21 @@ h3 {
 }
 
 h4 {
+    font-size: 36px;
     font-style: italic;
     color: var(--tertiary-color);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+
+
+    width: 100vw;
+    margin: 5px 10px;
+    padding: 0;
+
+    font-size: 20px;
 }
 
 #logo {
@@ -35,36 +57,95 @@ h4 {
     background-color: var(--accent-color);
 }
 
-#leftnav {
-    float: left;
-}
-
-#rightnav {
-    float: right;
+nav a {
+    text-decoration: none;
+    margin-left: 15px;
 }
 
 section {
-    padding: 15px;
+    height: 60vh;
 }
 
 section#hero {
-    height: 100vh;
     padding: 0;
+}
+
+#herocontainer {
+    margin: 500px 0 0 80px;
+    display: flex;
+    column-gap: 20px;
+    justify-content: center;
+}
+
+#herogif {
+    margin-top: -100px;
 }
 
 section#portfolio {
     background-color: rgba(0,0,0,0.5);
+    padding-bottom: 20px;
+}
+
+.h3 {
+    position: relative;
+    top: -26px;
+    left: 10px;
 }
 
 #gallery {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 10px;
+    /* justify-content: center;
+    align-items: center; */
 }
 
 #gallery img {
-    background-color: rgb(255,255,255);
-    height: 400px;
-    width: 300px;
+    background-color: var(--accent-color);
+    height: 300px;
+    width: 400px;
     margin: 0 10px;
+    object-fit: cover;
+    display: block;
+}
+
+section#contact {
+    padding-top: 100px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+section#contact h3 {
+    padding-bottom: 20px;
+}
+
+#contactcontainer {
+    border-radius: 5px;
+    color: var(--secondary-color);
+    font-size: 24px;
+}
+
+input[type=text], textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: var(--primary-color);
+    font-size: large;
+    margin-bottom: 10px;
+}
+
+input[type=submit] {
+    background-color: var(--accent-color);
+    color: var(--tertiary-color);
+    font-weight: bold;
+    font-size: large;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    color: var(--accent-color);
 }

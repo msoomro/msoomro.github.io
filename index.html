@@ -7,27 +7,35 @@
     <title>Moomal</title>
 </head>
 <body>
-    <nav>
-        <span id="leftnav">
-            <img src="" alt="" id="logo">
-        </span>
-        <span id="rightnav">
+    <header>
+        <!-- <img src="" alt="" id="logo">-->
+        <nav>
             <a href="#">blog</a>
             <a href="#contact">contact me</a>
+        </nav>
+        
+    </header>
 
-        </span>
-    </nav>
     <br>
+
     <section id="hero">
-        <h1>Moomal</h1>
-        <h4>Full-stack developer, designer</h4>
+        <div id="herocontainer">
+           <div id="name">
+                <h1>Moomal</h1>
+                <h4>[Full-stack developer, designer]</h4>
+            </div>
+            <div id="herogif">
+                <img src="media/laptopgif.gif" alt="gif of laptop">
+            </div> 
+        </div>
 
     </section>
 
 
     <section id="portfolio">
-        <h3>Projects</h3>
+        <div class="h3"><h3>Projects</h3></div>
         <div id="gallery">
+            <!-- todo: add projects here with descriptions and link to demo page -->
             <img src="#" alt="">
             <img src="#" alt="">
             <img src="#" alt="">  
@@ -36,9 +44,24 @@
     </section>
 
     <section id="contact">
-        <form action="submit">
+        <div><h3>Contact</h3></div>
+        <div id="contactcontainer">
+            <!-- todo: add php to submit form -->
+            <form action="#"> 
+                <label for="name">Your Name</label>
+                <input type="text" name="name" id="formname" placeholder="">
 
-        </form>
+                <label for="business">Business Name</label>
+                <input type="text" name="business" id="formbusiness" placeholder="Optional">
+
+                <label for="message">Message</label>
+                <textarea name="message" id="formmessage" placeholder="" style="height: 200px"></textarea>
+                
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+        
     </section>
 
     <footer>Copyright 2026</footer>

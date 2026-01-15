@@ -28,7 +28,7 @@ h1 {
 }
 
 h3 {
-    font-size: 48px;
+    font-size: 55px;
     font-style: normal;
     color: var(--secondary-color);
 }
@@ -101,12 +101,22 @@ section#portfolio {
 }
 
 #gallery img {
-    background-color: var(--accent-color);
+    border-style: solid;
+    border-width: 15px 5px 5px 5px;
+    border-radius: 5px;
+    border-color: rgba(0,0,0,0.4);
+
+    /* background-color: var(--accent-color); */
     height: 300px;
     width: 400px;
     margin: 0 10px;
     object-fit: cover;
     display: block;
+}
+
+.project {
+    color: white;
+    padding: 5px;
 }
 
 section#contact {

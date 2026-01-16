@@ -13,11 +13,11 @@ body {
     padding: 0;
 
     /*Hides any horizontal overflow */
-    width: 99vw;
+    width: 99.4vw;
     overflow-x: hidden;  
 }
 
-h1, h2, h3, h4 {
+h1, h2, h3, h4, h5, h6, p {
     margin: 0;
 }
 
@@ -37,6 +37,10 @@ h4 {
     font-size: 36px;
     font-style: italic;
     color: var(--tertiary-color);
+}
+
+h6 {
+    font-size: 20px;
 }
 
 nav {
@@ -63,11 +67,12 @@ nav a {
 }
 
 section {
-    height: 60vh;
+    /* height: 60vh; */
 }
 
 section#hero {
     padding: 0;
+    height: 60vh;
 }
 
 #herocontainer {
@@ -88,16 +93,19 @@ section#portfolio {
 
 .h3 {
     position: relative;
-    top: -26px;
-    left: 10px;
+    /* top: -24px; */
+    top: 10px;
+    padding-bottom: 30px;
+    left: 20px;
 }
 
 #gallery {
+    margin-right: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 10px;
-    /* justify-content: center;
-    align-items: center; */
+    /*max 4 elements per row: element-width * 4 + (gap * 3) */
+    /*max-width: 1630px; */
 }
 
 #gallery img {
@@ -109,14 +117,29 @@ section#portfolio {
     /* background-color: var(--accent-color); */
     height: 300px;
     width: 400px;
-    margin: 0 10px;
     object-fit: cover;
-    display: block;
 }
 
 .project {
+    margin: 0 10px;
+    /* background-color: var(--accent-color); */
+    display: block;
     color: white;
     padding: 5px;
+}
+
+.project h6 {
+    padding-left: 5px;
+    padding-bottom: 5px;
+}
+
+.description {
+    padding-left: 10px;
+}
+
+.techlist {
+    color: var(--accent-color);
+    padding-left: 10px;
 }
 
 section#contact {
@@ -158,4 +181,5 @@ footer {
     display: flex;
     justify-content: center;
     color: var(--accent-color);
+    margin-top: 20px;
 }

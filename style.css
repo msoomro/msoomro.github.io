@@ -13,8 +13,8 @@ body {
     padding: 0;
 
     /*Hides any horizontal overflow */
-    width: 99.4vw;
-    overflow-x: hidden;  
+    /* width: 99.4vw;
+    overflow-x: hidden;   */
 }
 
 h1, h2, h3, h4, h5, h6, p {
@@ -47,27 +47,17 @@ nav {
     display: flex;
     justify-content: space-between;
 
-    width: 100vw;
+    /* width: 100vw; */
     margin: 5px 10px;
     padding: 0;
 
     font-size: 20px;
 }
 
-#logo {
-    height: 50px;
-    width: 50px;
-    background-color: var(--accent-color);
-}
-
 nav a {
     text-decoration: none;
     margin-left: 15px;
     margin-right: 25px;
-}
-
-section {
-    /* height: 60vh; */
 }
 
 section#hero {
@@ -119,16 +109,16 @@ section#portfolio {
     /* top: -24px; */
     top: 10px;
     padding-bottom: 30px;
-    left: 20px;
+    padding-left: 20px;
 }
 
 #gallery {
-    margin-right: 30px;
+    padding-right: 30px;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 10px;
     /*max 4 elements per row: element-width * 4 + (gap * 3) */
-    /*max-width: 1630px; */
+    /* max-width: 1630px; */
 }
 
 #gallery img {
@@ -137,7 +127,6 @@ section#portfolio {
     border-radius: 5px;
     border-color: rgba(0,0,0,0.4);
 
-    /* background-color: var(--accent-color); */
     height: 300px;
     width: 400px;
     object-fit: cover;
@@ -145,7 +134,6 @@ section#portfolio {
 
 .project {
     margin: 0 10px;
-    /* background-color: var(--accent-color); */
     display: block;
     color: white;
     padding: 5px;
@@ -175,6 +163,11 @@ section#contact h3 {
     padding-bottom: 20px;
 }
 
+#contact div {
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
 #contactcontainer {
     border-radius: 5px;
     color: var(--secondary-color);
@@ -182,7 +175,7 @@ section#contact h3 {
 }
 
 input[type=text], input[type=email], textarea {
-    width: 100%;
+    width: 95%;
     padding: 12px;
     background-color: var(--primary-color);
     font-size: large;
@@ -205,4 +198,4 @@ footer {
     justify-content: center;
     color: var(--accent-color);
     margin-top: 20px;
-}
+} 

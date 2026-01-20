@@ -69,11 +69,26 @@ section#hero {
     height: 60vh;
 }
 
+@media screen and (max-width: 900px) {
+    section#hero {
+        padding: 0;
+        height: 60vh;
+    }
+}
+
 #herocontainer {
     margin: 500px 0 0 80px;
     display: flex;
     column-gap: 20px;
     justify-content: center;
+}
+
+@media screen and (max-width: 900px) {
+    #herocontainer {
+        margin: 300px 0 0 40px;
+        display: grid;
+        justify-content: center;
+    }
 }
 
 #sms-icons {
@@ -101,6 +116,19 @@ section#hero {
 
 #herogif {
     margin-top: -100px;
+}
+
+@media screen and (max-width: 900px) {
+    #herogif {
+        margin-top: -500px;
+    }
+    #herogif img {
+        width: 300px;
+        height: auto;
+    }
+    #herotext {
+        /* margin-top: 500px; */
+    }
 }
 
 section#portfolio {
@@ -157,6 +185,55 @@ section#portfolio {
     padding-left: 10px;
 }
 
+@media screen and (max-width: 900px) {
+    #gallery {
+        padding-right: 30px;
+        /* display: block; */
+        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+        gap: 10px;
+        /*max 4 elements per row: element-width * 4 + (gap * 3) */
+        /* max-width: 1630px; */
+    }
+
+    #gallery img {
+        border-style: solid;
+        border-width: 15px 5px 5px 5px;
+        border-radius: 5px;
+        border-color: rgba(0,0,0,0.4);
+
+        height: 225px;
+        width: 300px;
+        object-fit: cover;
+    }
+
+    .project {
+        margin: 0 10px;
+        display: block;
+        color: white;
+        padding: 5px;
+        max-width: 300px;
+        text-wrap: wrap;
+    }
+
+    .project h6 {
+        padding-left: 5px;
+        padding-bottom: 5px;
+    }
+
+    .description {
+        padding: auto 10px;
+        /* max-width: 300px;
+        text-wrap: wrap; */
+    }
+
+    .techlist {
+        color: var(--accent-color);
+        padding-left: 10px;
+        /* max-width: 300px;
+        text-wrap: wrap; */
+    }
+}
+
 section#contact {
     padding-top: 100px;
     padding-left: 20px;
@@ -170,6 +247,23 @@ section#contact h3 {
 #contact div {
     padding-left: 30px;
     padding-right: 10px;
+}
+
+@media screen and (max-width: 800px) {
+    section#contact {
+        padding-top: 100px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    section#contact h3 {
+        padding-bottom: 20px;
+    }
+
+    #contact div {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
 }
 
 #contactcontainer {
@@ -203,3 +297,15 @@ footer {
     color: var(--accent-color);
     margin-top: 20px;
 } 
+
+
+@media screen and (max-width: 900px) {
+    footer {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: var(--accent-color);
+        margin-top: 20px;
+        height: 50px;
+    } 
+}

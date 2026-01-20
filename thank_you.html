@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            background-color: rgb(255, 202, 251);
+    font-family: Bahnschrift, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            color: rgb(51, 23, 154);
+            margin: 0;
+            padding: 0;
+        }
+
+        h1, h2 {
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-between;
+
+            margin: 20px 20px 30px 20px;
+            padding: 5px 10px;
+
+            font-size: 20px;
+        }
+
+        nav a {
+            color: rgb(51, 23, 154);
+            text-decoration: none;
+        }
+        section {
+            display: flex;
+            justify-content: center; /* Centers horizontally */
+            align-items: center; /* Centers vertically */
+
+        }
+
+        #container {
+            background-color: rgba(51, 23, 154, 0.25);
+            border: 3px solid rgb(51, 23, 154);
+            padding: 70px 20px 50px;
+            display: grid;
+            place-items: center;
+            width: 50vw;
+        }
+
+        #returnhomebtn {
+            background-color: rgb(255, 164, 249);
+            border: 3px solid rgb(51, 23, 154);
+            color: rgb(51, 23, 154);
+            padding: 5px 10px;
+            text-decoration: none;
+            margin-top: 20px;
+        }
+        #returnhomebtn:hover {
+            background-color: rgb(147, 212, 253);
+        }
+        #returnhomebtn:active {
+            border-width: 6px 1px 1px 6px;
+        }
+
+        a {
+            user-select: none;
+        }
+
+    </style>
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">home</a>
+            <a href="index.html#contact">contact me</a>
+        </nav>
+        
+    </header>
+
+    <section>
+        <div id="container">
+            <h1>THANK YOU</h1>
+            <h2>Form submitted successfully.</h2><br>
+            <a id="returnhomebtn" href="index.html">Return to Home</a>
+        </div>  
+    </section>
+    
+</body>
+</html>
